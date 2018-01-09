@@ -1,0 +1,10 @@
+stages:
+- develop
+deploy:
+  stage: develop
+  script:
+    - deploy6 public_html onlineducation-mobile
+  only:
+    - develop
+  tags:
+    - develop
